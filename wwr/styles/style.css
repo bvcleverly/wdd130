@@ -11,6 +11,7 @@ nav a {
     -webkit-text-stroke: .3px black;
     font-size: 1.5em;
     margin:  0 2% 0 0;
+    padding: 35px;
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -29,9 +30,20 @@ main section {
 }
 body {
     background-color: #86D6EA; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color: #CDE8F4; 
+    font-family: Tahoma, Georgia, sans-serif;
+    /* margin: 5% 0 5% 0;  */
+    height: 6em;
+
+}
+h2 {
+    margin: 0;
 }
 nav a:hover {
     background-color: #24B2F9; 
@@ -39,10 +51,15 @@ nav a:hover {
     -webkit-text-stroke: .3px black;
 }
 .book, .join {
+
     background-color: #CDE8F4; 
     text-decoration: none;
     color: #FF961F;
+    font-size: 18px;
     -webkit-text-stroke: .3px black;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover, .join:hover {
     background-color: #24B2F9; 
@@ -52,16 +69,21 @@ nav a:hover {
 }
 .msg {
     background-color: #86D6EA; 
-
     color: #FF961F;
+    line-height: 1.5em;
     -webkit-text-stroke: .3px black;
+    padding: 35px;
 }
 footer {
     background-color: #CDE8F4; 
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 .home-title {
+        font-size: 2em;
         color: #FF961F;
         -webkit-text-stroke: .3px black;
+        margin-top: 10px;
 }
 h4 {
 
@@ -72,12 +94,14 @@ h4 {
     color: #FF961F;
     -webkit-text-stroke: .5px black;
     font-size: 3em;
+    font-family: Tahoma, Georgia, sans-serif;
 }
 .msg p {
 
     color: #FF961F;
     -webkit-text-stroke: .25px black;
-    font-size: 2.5em;
+    font-size: .8em;
+    padding: 35px;
 }
 footer a {
 
@@ -99,6 +123,7 @@ footer a:hover {
 .icon {
     width: 80px;
     height: 80px;
+    padding-top: 10px;
 }
 #hero-img {
     width: 100%;
@@ -110,3 +135,11 @@ footer p {
 footer p a:hover {
     text-decoration: none;
 }
+#logo_link   {padding-top: 5px;}
+footer .social img   {padding-top: 15px;}
+.rivers-card, .camping-card, .rapids-card   {margin: 200px 0;}
+.card-img {
+    border: 10px solid #000;}
+    main section img {
+        box-sizing: border-box;
+    }
