@@ -231,7 +231,7 @@ main section img {
     }
     nav a {
         display: block;
-        padding: 5px;
+        padding: 0px;
     }
     #hero {
         margin-top: 0;
