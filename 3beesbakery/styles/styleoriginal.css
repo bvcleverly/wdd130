@@ -1,0 +1,143 @@
+#content {
+    max-width:  1600px;
+    margin: 0 auto; 
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+nav a {
+    text-align: center;
+    background-color: #CDE8F4;
+    color: #985B10;
+    text-decoration: none;
+    -webkit-text-stroke: .3px #FCD615;
+    font-size: 1.5em;
+    margin:  0 2% 0 0;
+    padding: 25px;
+}
+
+main section { 
+    text-align: center;
+}
+body {
+    background-color: #86D6EA; 
+    font-family: Arial, Trebuchet, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #CDE8F4; 
+    font-family: Arial, Trebuchet, sans-serif;
+    /* margin: 5% 0 5% 0;  */
+    height: 6em;
+
+}
+#hero-img {
+    width: 100%;
+}
+#cookiesstack-img {
+    
+    height: 800px;
+    width: 1600px;
+}
+#sand-img {
+    
+    height: 800px;
+    width: 1600px;
+}
+nav a:hover {
+    background-color: #24B2F9; 
+    color: #000;
+    -webkit-text-stroke: .3px black;
+}
+footer {
+    background-color: #CDE8F4; 
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.home-title {
+        font-size: 3em;
+        color: #985B10;
+        -webkit-text-stroke: 1.25px #FCD615;
+        margin-top: 10px;
+        justify-self: center;
+}
+footer a {
+
+    color: #985B10;
+    text-decoration: none;
+    -webkit-text-stroke: .3px #FCD615;
+
+}
+footer a:hover {
+
+    color: #000;
+
+    background-color: #CDE8F4; 
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: none;
+}
+#logo_link   {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+footer .social img   {padding-top: 15px;}
+.playerinfo{
+    display: grid;
+}
+    
+.leftimage {
+    padding-top: 33px;
+    height: 800px;
+    width: 800px;
+}
+
+.rightimage {
+    padding-top: 33px;
+    height: 800px;
+    width: 800px;
+}
+.content {
+    padding-top:20px;
+}
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        padding: 0px;
+    }
+    #hero {
+        margin-top: 15px;
+    }
+    .home-title {
+        font-size: 25px;
+    }
+    #background {
+        display: none;
+    }
+    footer {
+        margin-top: 25px;
+    }
+}

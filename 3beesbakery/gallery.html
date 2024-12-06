@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3Bees Bakery | Gallery</title>
+    <link rel="stylesheet" href="styles/gallerystyle.css">
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>3Bees Bakery</h1>
+
+<h2>Gallery</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('home')">Home</button>
+  <button class="btn" onclick="filterSelection('pastries')">Pastries</button>
+  <button class="btn" onclick="filterSelection('brunch')">Brunch</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column home">
+    <div class="content">
+      <img src="images/3BeesBakery.png" alt="3Bees logo" style="width:100%">
+    </div>
+  </div>
+  <div class="column home">
+    <div class="content">
+    <img src="images/bakover.png" alt="Overhead view of bakery" style="width:100%">
+    </div>
+  </div>
+  <div class="column home">
+    <div class="content">
+    <img src="images/3loaves.png" alt="home" style="width:100%">
+    </div>
+  </div>
+  
+  <div class="column home">
+    <div class="content">
+      <img src="images/breadcab.png" alt="Picture of a cabinet with vairous loaves of bread" style="width:100%">
+    </div>
+  </div>
+  <div class="column home">
+    <div class="content">
+    <img src="images/greensoup.png" alt="Soup with green garnish on top" style="width:100%">
+    </div>
+  </div>
+  <div class="column pastries">
+    <div class="content">
+    <img src="images/cherrycheese.png" alt="Picture of cherry cheeskcake slice" style="width:100%">
+    </div>
+  </div>
+
+  <div class="column pastries">
+    <div class="content">
+      <img src="images/cookiesstack.png" alt="Stacks of cookies" style="width:100%">
+    </div>
+  </div>
+  <div class="column pastries">
+    <div class="content">
+    <img src="images/croissant.png" alt="Croissants" style="width:100%">
+    </div>
+  </div>
+  <div class="column brunch">
+    <div class="content">
+    <img src="images/sandwich.png" alt="Sandwich" style="width:100%">
+    </div>
+  </div>
+  <div class="column brunch">
+    <div class="content">
+    <img src="images/soup.png" alt="Pumpkin soup" style="width:100%">
+    </div>
+  </div>
+  <div class="column brunch">
+    <div class="content">
+    <img src="images/cookietray.png" alt="Tray of cookies" style="width:100%">
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
