@@ -122,3 +122,33 @@ nav a:hover {
     width: 80px;
     height: 80px;
 }
+footer {
+    background-color: #CDE8F4; 
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+
+    color: #985B10;
+    text-decoration: none;
+    -webkit-text-stroke: .3px #FCD615;
+
+}
+footer a:hover {
+
+    color: #000;
+
+    background-color: #CDE8F4; 
+}
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover {
+    text-decoration: none;
+}
+footer .social img   {padding-top: 15px;}
+.playerinfo{
+    display: grid;
+}
