@@ -4,14 +4,17 @@
 
 body {
   background-color: #86D6EA;
-  padding: 20px;
-  font-family: Arial;
+  font-family: Arial, Trebuchet, sans-serif;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Center website */
 .main {
   max-width: 1500px;
   margin: auto;
+  text-align: center;
 }
 
 h1 {
@@ -28,8 +31,7 @@ h2 {
   word-break: break-all;
   justify-self: center;
 }
-.content {
-}
+
 
 .row {
   margin: 10px -16px;
@@ -87,4 +89,36 @@ h2 {
 .btn.active {
   background-color: #985B10;
   color:#FCD615;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-align: center;
+  background-color: #CDE8F4;
+  color: #985B10;
+  text-decoration: none;
+  -webkit-text-stroke: .3px #FCD615;
+  font-size: 1.5em;
+  margin:  0 2% 0 0;
+  padding: 25px;
+}
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color: #CDE8F4; 
+    font-family: Arial, Trebuchet, sans-serif;
+    /* margin: 5% 0 5% 0;  */
+    height: 6em;
+
+}
+nav a:hover {
+    background-color: #24B2F9; 
+    color: #000;
+    -webkit-text-stroke: .3px black;
+}
+.logo {
+    width: 80px;
+    height: 80px;
 }
