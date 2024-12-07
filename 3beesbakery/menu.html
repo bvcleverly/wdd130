@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>3Bees Bakery | Menu</title>
+    <link rel="stylesheet" href="styles/menustyle.css">
+</head>
+<body>
+  <header>
+      <a id="logo_link" href="index.html">
+          <img class="logo" src="images/3BeesBakery.png" alt="3Bees Bakery logo"></a>
+      <nav>  
+          <a href="index.html">Home</a>
+          <a href="pastries.html">Pastries and Goodies</a>
+          <a href="brunch.html">Brunch and Catering</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="menu.html">Menu</a>
+          <a href="contactus.html">Contact Us</a>
+      </nav>
+          
+  </header>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>3Bees Bakery</h1>
+
+<h2>Menu</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openMenu(event, 'Pastries')">Pastries and Goodies</button>
+  <button class="tablinks" onclick="openMenu(event, 'Brunch')">Brunch</button>
+  <button class="tablinks" onclick="openMenu(event, 'Catering')">Catering</button>
+</div>
+
+<div id="Pastries" class="tabcontent">
+  <h3>Pastries</h3>
+  <p>List items</p>
+</div>
+
+<div id="Brunch" class="tabcontent">
+  <h3>Brunch</h3>
+  <p>List items</p>
+</div>
+
+<div id="Catering" class="tabcontent">
+  <h3>Catering</h3>
+  <p>List items</p>
+</div>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+
+<footer>
+  <p>3Bees Bakery &copy; 2024 - Blake Cleverly</p>
+  <p><a href="siteplan.html">Site Plan</a></p>
+  <p><a href="contactus.html">Contact Us</a></p>
+  <div class="social">
+      <a href="https://facebook.com" target="_blank">
+          <img src="images/facebook.png" alt="fb icon">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+          <img src="images/instagram.png" alt="instagram icon">
+      </a>
+  </div>
+</footer>
+</html>
